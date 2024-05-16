@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto Mono', sans-serif;;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.404), rgb(119, 199, 119));
+}
+
+.calculator {
+    display: grid;
+    margin-top: 3rem;
+    justify-content: center;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(5rem, auto) repeat(5, 5rem);
+}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.323);
+}
+
+#clear {
+    background-color: rgb(180, 97, 97, 0.8);
+}
+
+#clear:hover {
+    background-color: rgb(180, 97, 97, 0.5);
+}
+
+#equals {
+    background-color: rgba(70, 70, 151, 0.541);
+}
+
+#equals:hover {
+    background-color: rgba(70, 70, 151, 0.341);
+}
+
+#multiply {
+    background-color: grey;
+}
+
+#multiply:hover {
+    background-color: rgba(128, 128, 128, 0.637);
+}
+
+#divide {
+    background-color: grey;
+}
+
+#divide:hover {
+    background-color: rgba(128, 128, 128, 0.637);
+}
+
+#subtract {
+    background-color: grey;
+}
+
+#subtract:hover {
+    background-color: rgba(128, 128, 128, 0.637);
+}
+
+#add {
+    background-color: grey;
+}
+
+#add:hover {
+    background-color: rgba(128, 128, 128, 0.637);
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.width-two {
+    grid-column: span 2;
+}
+
+.height-two {
+    grid-row: span 2;
+}
+
+.display {
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, 0.555);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    padding: 0.5rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display .previous {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.display .current {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
